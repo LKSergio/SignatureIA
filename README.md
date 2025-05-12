@@ -5,6 +5,7 @@
 **1.1. Instalación de maplotlib:**
 
 - pip install numpy pandas matplotlib scikit-learn tensorflow opencv-python pillow
+- pip uninstall numpy pandas matplotlib scikit-learn tensorflow opencv-python pillow
 
 ## 2. Instalaciones en el proyecto
 
