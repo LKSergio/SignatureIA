@@ -1,6 +1,6 @@
 # SignatureIA
 
-## 1. Instalaciones en el cmd
+## 1. Instalaciones de Jupyter Notebook
 
 **1.1. Instalación de maplotlib:**
 
@@ -33,13 +33,28 @@
     
         - pip install jupyter numpy pandas matplotlib scikit-learn tensorflow opencv-python pillow
 
-## Actualizaciones de TensorFlow
+## 3.Actualizaciones de TensorFlow
 
 - pip install --upgrade tensorflow pandas
 - pip install --upgrade tensorflow
 - pip install pandas==2.0.3
 
-## Recursos
+## 4.React Native
+
+**4.1 Instalacion de Node js:**
+
+- [https://nodejs.org/en/download](https://nodejs.org/en/download)
+
+
+**4.2 Instalación de React Native:**
+
+- npx create-expo-app@latest
+
+**4.3. Inicializar React Native:**
+
+- npx expo start
+
+## 5.Recursos
 
 ### Generador de Firmas
 
