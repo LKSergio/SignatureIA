@@ -32,3 +32,26 @@
     - Instalación de Jupyter notebook con librerías necesarias (opcionales):
     
         - pip install jupyter numpy pandas matplotlib scikit-learn tensorflow opencv-python pillow
+
+## Actualizaciones de TensorFlow
+
+- pip install --upgrade tensorflow pandas
+- pip install --upgrade tensorflow
+- pip install pandas==2.0.3
+
+## Recursos
+
+### Generador de Firmas
+
+![Generador](1.png)
+
+[URL #1](https://onlinesignatures.net/es)
+
+
+### Siamese Network
+
+![Siamese-Network](2.png)
+
+[URL #1](https://builtin.com/machine-learning/siamese-network)
+
+[URL #2](https://medium.com/@rinkinag24/a-comprehensive-guide-to-siamese-neural-networks-3358658c0513)
