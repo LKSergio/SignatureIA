@@ -6,6 +6,20 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
+// Index de la aplicación:
+// Pantalla de inicio de la aplicación
+
+// Ahora quiero añadir un nuevo tab a la aplicación.
+// Para ello, voy a crear un nuevo archivo en la carpeta app/(tabs)/
+// y lo voy a llamar index.tsx.
+// Este archivo va a ser el index de la aplicación.
+// En este archivo voy a importar el componente ParallaxScrollView
+// y lo voy a usar para crear una pantalla de inicio.
+// El componente ParallaxScrollView es un componente que permite hacer scroll
+// en la pantalla y que tiene una imagen de fondo que se desplaza
+// a medida que se hace scroll.
+// También voy a importar el componente ThemedText y ThemedView
+// que son componentes que permiten crear textos y vistas con un tema.
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
@@ -17,7 +31,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title" style={{ color: 'yellow' }}>Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
