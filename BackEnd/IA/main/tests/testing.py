@@ -193,6 +193,6 @@ if __name__ == "__main__":
     elif sys.argv[1] == 'test':
         #similarity = image_similarity('test/test1.png', 'test/test2.png') just easier to test
         similarity = image_similarity(sys.argv[2], sys.argv[3])
-        print('Genuine' if similarity < 0.5 else 'Forged') # note the similarity is swapped around in the data, (1 means forged, 0 means genuine)
+        print('Verdadera' if similarity < 0.5 else 'Falsificada') # note the similarity is swapped around in the data, (1 means forged, 0 means genuine)
     else:
         print("Usage: python train.py [train | val | test]")
