@@ -11,17 +11,17 @@
 
 **2.1. Instalar .env:**
 
-- python -m venv .env
+- python -m venv .venv
 
     **2.1.1. Activación del environment:**
     
-    - Activación del .env en Cmd:
+    - Activación del .venv en Cmd:
     
-        - .env\Scripts\activate
+        - .venv\Scripts\activate
         
-    - Activación del .env en PowerShell:
+    - Activación del .venv en PowerShell:
     
-        - .\.env\Scripts\Activate.ps1
+        - .\.venv\Scripts\Activate.ps1
 
     **2.1.2. Configuración del environment:**
 
