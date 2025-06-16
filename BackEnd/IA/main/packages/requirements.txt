@@ -9,3 +9,6 @@ matplotlib
 cv
 scikit-learn
 opencv-python
+fastapi
+uvicorn
+python-multipart
