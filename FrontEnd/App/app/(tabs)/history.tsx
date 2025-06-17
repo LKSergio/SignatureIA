@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Image } from 'expo-image';
 import { CheckCircle2, XCircle, Calendar, Clock } from 'lucide-react-native';
 import Animated, { FadeInUp } from 'react-native-reanimated';
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback } from 'react';
 
 interface HistoryItem {
   id: string;
@@ -13,6 +15,7 @@ interface HistoryItem {
   confidence: number;
   referenceImage: string;
   testImage: string;
+  processingTime?: number;
 }
 
 // Mock data for demonstration
@@ -48,6 +51,17 @@ const historyData: HistoryItem[] = [
 
 export default function HistoryScreen() {
   const [selectedItem, setSelectedItem] = useState<HistoryItem | null>(null);
+  const [historyData, setHistoryData] = useState<HistoryItem[]>([]);
+
+  
+  useFocusEffect(
+    useCallback(() => {
+      fetch('http://192.168.41.49:8000/history/')
+        .then(res => res.json())
+        .then(data => setHistoryData(data))
+        .catch(() => setHistoryData([]));
+    }, [])
+  );
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -123,7 +137,9 @@ export default function HistoryScreen() {
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Processing Time:</Text>
-                <Text style={styles.detailValue}>2.3 seconds</Text>
+                <Text style={styles.detailValue}>
+                  {item.processingTime ? `${item.processingTime} seconds` : 'N/A'}
+                </Text>
               </View>
               <View style={styles.detailRow}>
                 <Text style={styles.detailLabel}>Algorithm Version:</Text>

@@ -155,7 +155,7 @@ export default function VerifyScreen() {
         } as any);
       }
 
-      const response = await fetch('http://192.168.26.2:8000/verify-signature/', {
+      const response = await fetch('http://192.168.41.49:8000/verify-signature/', {
         method: 'POST',
         body: formData,
       });
