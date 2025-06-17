@@ -1,6 +1,26 @@
 # SignatureIA
 
-## 1. Instalaciones de Jupyter Notebook
+## 1. Instalaciones del proyecto:
+
+En las secciones del proyecto van a estar divididas por etapas:
+
+- En el BackEnd hay un README.md para la instalación:
+
+    - Python 3.10.0 (Version necesaria)
+    - Instalación y Activación de un Environment de Python
+    - Instalación y Ejecución de la API
+
+
+- En el FrontEnd hay un README.md para la instalación:
+
+    - npm install (node module)
+    - Instalación de librerias para lottie animation
+    - Instalación de librerias para las fuentes
+    
+    - Instalación y Activación de un Environment de Python
+    - Instalación y Ejecución de la API
+
+ Jupyter Notebook
 
 **1.1. Instalación de maplotlib:**
 
